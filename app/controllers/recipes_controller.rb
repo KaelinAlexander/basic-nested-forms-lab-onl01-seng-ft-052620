@@ -27,6 +27,6 @@ class RecipesController < ApplicationController
       :
     ]
     )
-  end 
-  
+  end
+
 end
