@@ -2,6 +2,7 @@
 <%= form_for @recipe do |f| %>
 <%= f.label :title %>
 <%= f.text_field :title %><br>
+
 <%= f.fields_for :ingredients do |ing| %>
 
 <%= ingr.label :name %>
@@ -9,3 +10,6 @@
 
 <%= ingr.label :quantity %>
 <%= ingr.text_field :quantity %><br>
+<% end %>
+<%= f.submit %>
+<% end %>
