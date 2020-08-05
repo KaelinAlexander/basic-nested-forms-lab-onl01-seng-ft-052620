@@ -24,7 +24,8 @@ class RecipesController < ApplicationController
     params.require(:recipe).permit(
     :name,
     ingredents_attributes: [
-      :
+      :name,
+      :quantity
     ]
     )
   end
